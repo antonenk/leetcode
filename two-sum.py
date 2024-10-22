@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 
 class Solution:
     def twoSum(self, nums: list[int], target: int) -> list[int]:
@@ -53,3 +54,13 @@ def test_my4():
     nums = [1, 2, 3]
     target = 7
     assert Solution().twoSum(nums, target) is None
+
+
+if __name__ == '__main__':
+    test_1()
+    test_2()
+    test_3()
+    test_my1()
+    test_my2()
+    test_my3()
+    test_my4()

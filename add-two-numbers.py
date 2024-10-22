@@ -84,6 +84,7 @@ def test_3():
     assert getStringFromLinkedList(Solution().addTwoNumbers(l1, l2)) == '10009998'
 
 
-test_2()
-test_1()
-test_3()
+if __name__ == '__main__':
+    test_2()
+    test_1()
+    test_3()

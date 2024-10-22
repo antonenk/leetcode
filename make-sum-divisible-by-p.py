@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 class Solution:
     def minSubarray(self, nums: list[int], p: int) -> int:
         sumOfNums = 0
@@ -41,3 +43,10 @@ def test_no_subarray():
     nums = [1, 2, 3]
     p = 10
     assert Solution().minSubarray(nums, p) == -1
+
+
+if __name__ == '__main__':
+    test_1()
+    test_2()
+    test_3()
+    test_no_subarray()

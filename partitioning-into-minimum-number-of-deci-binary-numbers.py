@@ -15,3 +15,9 @@ def test_2():
 
 def test_3():
     assert Solution().minPartitions("27346209830709182346") == 9
+
+
+if __name__ == '__main__':
+    test_1()
+    test_2()
+    test_3()

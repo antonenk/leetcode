@@ -49,3 +49,8 @@ def test_2():
 
     subrectangleQueries.updateSubrectangle(1, 1, 2, 2, 20)
     assert subrectangleQueries.getValue(2, 2) == 20
+
+
+if __name__ == '__main__':
+    test_1()
+    test_2()

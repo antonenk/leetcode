@@ -58,5 +58,6 @@ def test_2():
     assert getStringFromLinkedList(Solution().mergeNodes(ln)) == '1,3,4'
 
 
-test_1()
-test_2()
+if __name__ == '__main__':
+    test_1()
+    test_2()

@@ -31,6 +31,7 @@ def test_3():
     assert Solution().dividePlayers(skill) == -1
 
 
-test_1()
-test_2()
-test_3()
+if __name__ == '__main__':
+    test_1()
+    test_2()
+    test_3()
