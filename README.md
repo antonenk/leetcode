@@ -1,1 +1,2 @@
-I store solution for problem https://leetcode.com/problems/<problem name>/ in file <problem name>.py or folder <problem name>
+Solution for problem described at https://leetcode.com/problems/<problem name>/
+stored in file ./<problem name>.py (or .sh or .sql) or in folder ./<problem name>/
