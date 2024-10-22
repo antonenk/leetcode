@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+# https://leetcode.com/problems/make-sum-divisible-by-p/description/
+
 class Solution:
     def minSubarray(self, nums: list[int], p: int) -> int:
         sumOfNums = 0

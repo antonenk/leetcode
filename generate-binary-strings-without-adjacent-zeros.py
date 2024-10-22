@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+# https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/description/
+
 class Solution:
     def validStrings(self, n: int) -> list[str]:
         if n == 1:

@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+# https://leetcode.com/problems/divide-players-into-teams-of-equal-skill/description/
+
 class Solution:
     def dividePlayers(self, skill: list[int]) -> int:
         totalSkill = sum(skill)

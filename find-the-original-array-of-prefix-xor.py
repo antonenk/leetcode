@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+# https://leetcode.com/problems/find-the-original-array-of-prefix-xor/description/
+
 class Solution:
     def findArray(self, pref: list[int]) -> list[int]:
         result = [pref[0]]

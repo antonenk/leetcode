@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+# https://leetcode.com/problems/subrectangle-queries/description/
+
 class SubrectangleQueries:
 
     def __init__(self, rectangle: list[list[int]]):

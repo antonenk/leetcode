@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+# https://leetcode.com/problems/container-with-most-water/description/
+
 class Solution:
     def maxAreaN2(self, height: list[int]) -> int:
         maxArea = 0

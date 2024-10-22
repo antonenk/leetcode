@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+# https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/description/
+
 class Solution:
     def findMatrix(self, nums: list[int]) -> list[list[int]]:
         nums_count = [0] * (len(nums) + 1)
