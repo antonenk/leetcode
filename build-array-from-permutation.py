@@ -9,11 +9,11 @@ class Solution:
 
 
 def test_1():
-    assert Solution().buildArray([0,2,1,5,3,4]) == [0,1,2,4,5,3]
+    assert Solution().buildArray([0, 2, 1, 5, 3, 4]) == [0, 1, 2, 4, 5, 3]
 
 
 def test_2():
-    assert Solution().buildArray([5,0,1,2,3,4]) == [4,5,0,1,2,3]
+    assert Solution().buildArray([5, 0, 1, 2, 3, 4]) == [4, 5, 0, 1, 2, 3]
 
 
 if __name__ == '__main__':
