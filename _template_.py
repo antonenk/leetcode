@@ -1,0 +1,26 @@
+#!/usr/bin/python3
+
+# https://leetcode.com/problems//description/
+
+
+class Solution:
+    def 
+        return
+
+
+def test_1():
+    assert Solution().() == 
+
+
+def test_2():
+    assert Solution().() == 
+
+
+def test_3():
+    assert Solution().() == 
+
+
+if __name__ == '__main__':
+    test_1()
+    test_2()
+    test_3()
