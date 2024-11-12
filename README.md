@@ -1,2 +1,1 @@
-Solution for problem described at https://leetcode.com/problems/problem_name/
-stored in file ./*problem_name*.py (or .sh or .sql) or in folder ./*problem_name*/
+My statistics is available [here](https://leetcode.com/u/8apWlbXOQo/)
