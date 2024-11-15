@@ -28,19 +28,19 @@ class Solution:
                 time += travel[i]
             elif "P" in houseGarbage:
                 paperFound = True
-                
+
         return time
 
 
 def test_1():
-    garbage = ["G","P","GP","GG"]
-    travel = [2,4,3]
+    garbage = ["G", "P", "GP", "GG"]
+    travel = [2, 4, 3]
     assert Solution().garbageCollection(garbage, travel) == 21
 
 
 def test_2():
-    garbage = ["MMM","PGM","GP"]
-    travel = [3,10]
+    garbage = ["MMM", "PGM", "GP"]
+    travel = [3, 10]
     assert Solution().garbageCollection(garbage, travel) == 37
 
 
