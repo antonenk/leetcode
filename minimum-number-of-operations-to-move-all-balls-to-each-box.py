@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# https://leetcode.com/problems//description/
+# https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/description/
 # beats 47% runtime / 8% mem
 
 

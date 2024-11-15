@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# https://leetcode.com/problems//description/
+# https://leetcode.com/problems/minimum-amount-of-time-to-collect-garbage/description/
 # beats 91% runtime / 69% mem
 
 

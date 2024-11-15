@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# https://leetcode.com/problems//description/
+# https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/description/
 
 
 class Solution:

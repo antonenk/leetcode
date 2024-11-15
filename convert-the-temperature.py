@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# https://leetcode.com/problems//description/
+# https://leetcode.com/problems/convert-the-temperature/description/
 
 
 class Solution:
