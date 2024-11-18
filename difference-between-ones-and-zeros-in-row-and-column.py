@@ -22,6 +22,7 @@ class Solution:
 
         return [[diffRow[r]+diffCol[c] for c in range(width)] for r in range(height)]
 
+
 def test_1():
     grid = [[0, 1, 1], [1, 0, 1], [0, 0, 1]]
     output = [[0, 0, 4], [0, 0, 4], [-2, -2, 2]]

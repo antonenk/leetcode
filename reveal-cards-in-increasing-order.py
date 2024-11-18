@@ -21,7 +21,7 @@ def test_1():
 
 
 def test_2():
-    assert Solution().deckRevealedIncreasing([1, 1000]) == [1,1000]
+    assert Solution().deckRevealedIncreasing([1, 1000]) == [1, 1000]
 
 
 if __name__ == '__main__':
