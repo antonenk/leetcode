@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 # https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/description/
-# beats % runtime / % mem
+# beats 100% runtime / 36% mem
 
 
 from typing import Optional
@@ -16,11 +16,11 @@ class TreeNode:
 
 def addGreaterValuesToNodes(node: TreeNode, sumGreaterNodes):
     if node.right is not None:
-        sumGreaterNodes += addGreaterValuesToNodes(node.right, sumGreaterNodes)
-    valBeforeIncrease = node.val
+        sumGreaterNodes = addGreaterValuesToNodes(node.right, sumGreaterNodes)
+    # print(node.val, "->")
     node.val += sumGreaterNodes
-    print(f"{valBeforeIncrease} --> {node.val}")
-    sumGreaterNodes += valBeforeIncrease
+    # print("->", node.val)
+    sumGreaterNodes = node.val
     if node.left is not None:
         sumGreaterNodes = addGreaterValuesToNodes(node.left, sumGreaterNodes)
     return sumGreaterNodes
