@@ -4,12 +4,7 @@
 
 from typing import Optional
 from math import gcd
-
-
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+from leetcode import ListNode, getArrayFromLinkedList, getLinkedListFromArray
 
 
 class Solution:
@@ -25,27 +20,6 @@ class Solution:
             curListNode = nextListNode
 
         return head
-
-
-def getArrayFromLinkedList(ln: ListNode):
-    result = [ln.val]
-    while ln.next is not None:
-        ln = ln.next
-        result.append(ln.val)
-    return result
-
-
-def getLinkedListFromArray(values: list):
-    firstListNode = None
-    prevListNode = None
-    for value in values:
-        curListNode = ListNode(val=value)
-        if firstListNode is None:
-            firstListNode = curListNode
-        if prevListNode is not None:
-            prevListNode.next = curListNode
-        prevListNode = curListNode
-    return firstListNode
 
 
 def test_1():

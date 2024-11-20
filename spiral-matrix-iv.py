@@ -4,30 +4,7 @@
 # beats 78% runtime / 48% mem
 
 from typing import Optional
-
-
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
-
-
-def getLinkedListFromArray(values: list):
-    firstListNode = None
-    prevListNode = None
-    for value in values:
-        curListNode = ListNode(val=value)
-        if firstListNode is None:
-            firstListNode = curListNode
-        if prevListNode is not None:
-            prevListNode.next = curListNode
-        prevListNode = curListNode
-    return firstListNode
-
-
-def numsFromRange(n: int):
-    for i in range(n):
-        yield i
+from leetcode import ListNode, getArrayFromLinkedList, getLinkedListFromArray
 
 
 def numsFromList(head: ListNode):
