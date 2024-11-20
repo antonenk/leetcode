@@ -4,7 +4,7 @@
 # beats 78% runtime / 48% mem
 
 from typing import Optional
-from leetcode import ListNode, getArrayFromLinkedList, getLinkedListFromArray
+from leetcode import ListNode, getLinkedListFromArray
 
 
 def numsFromList(head: ListNode):
