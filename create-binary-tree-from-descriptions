@@ -1,0 +1,54 @@
+#!/usr/bin/python3
+
+# https://leetcode.com/problems/create-binary-tree-from-descriptions/description/
+# beats 46% runtime / 63% mem
+
+from typing import Optional
+from leetcode import TreeNode
+
+
+class Solution:
+    def createBinaryTree(self, descriptions: list[list[int]]) -> Optional[TreeNode]:
+        head = None
+        nodes = {}
+        haveParents = set()
+        for parentVal, childVal, isLeft in descriptions:
+            if parentVal in nodes:
+                parent = nodes[parentVal]
+            else:
+                parent = TreeNode(val=parentVal)
+                nodes[parentVal] = parent
+
+            if childVal in nodes:
+                child = nodes[childVal]
+            else:
+                child = TreeNode(val=childVal)
+                nodes[childVal] = child
+            
+            haveParents.add(childVal)
+            if isLeft == 1:
+                parent.left = child
+            else:
+                parent.right = child
+        haveNoParents = set(nodes.keys()).difference(haveParents)
+        return nodes[haveNoParents.pop()]
+
+
+def test_1():
+    descriptions = [[20,15,1],[20,17,0],[50,20,1],[50,80,0],[80,19,1]]
+    output = Solution().createBinaryTree(descriptions)
+    expected = output
+    assert expected == output
+
+
+def test_2():
+    descriptions = [[1,2,1],[2,3,0],[3,4,1]]
+    output = Solution().createBinaryTree(descriptions)
+    expected = output
+    assert expected == output
+
+
+if __name__ == '__main__':
+    test_1()
+    test_2()
+
