@@ -17,18 +17,18 @@ class Solution:
 
 
 def test_1():
-    queries = [3,1,2,1]
+    queries = [3, 1, 2, 1]
     m = 5
     output = Solution().processQueries(queries, m)
-    expected = [2,1,2,1] 
+    expected = [2, 1, 2, 1]
     assert output == expected
 
 
 def test_2():
-    queries = [4,1,2,2]
+    queries = [4, 1, 2, 2]
     m = 4
     output = Solution().processQueries(queries, m)
-    expected = [3,1,2,0]
+    expected = [3, 1, 2, 0]
     assert output == expected
 
 

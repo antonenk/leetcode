@@ -26,8 +26,7 @@ def buildTreeFromList(nodes: list[TreeNode]) -> TreeNode:
 
 class Solution:
     def balanceBST(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
-        l = getNodesList(root)
-        return buildTreeFromList(l)
+        return buildTreeFromList(getNodesList(root))
 
 
 def test_1():
