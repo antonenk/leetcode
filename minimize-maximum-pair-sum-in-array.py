@@ -11,11 +11,11 @@ class Solution:
 
 
 def test_1():
-    assert Solution().minPairSum([3,5,2,3]) == 7
+    assert Solution().minPairSum([3, 5, 2, 3]) == 7
 
 
 def test_2():
-    assert Solution().minPairSum([3,5,4,2,4,6]) == 8
+    assert Solution().minPairSum([3, 5, 4, 2, 4, 6]) == 8
 
 
 if __name__ == '__main__':
