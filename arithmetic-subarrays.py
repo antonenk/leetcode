@@ -5,7 +5,7 @@
 
 
 class Solution:
-    def checkArithmeticSubarrays(self, nums: list[int], l: list[int], r: list[int]) -> list[bool]: #
+    def checkArithmeticSubarrays(self, nums: list[int], l: list[int], r: list[int]) -> list[bool]:  # noqa: E741
         answers = []
         for i in range(len(l)):
             seq = nums[l[i]:r[i] + 1]
