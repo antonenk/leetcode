@@ -22,11 +22,6 @@ class Solution:
 
 
 def test_1():
-    grid = [[0, 0, 1, 1], [1, 0, 1, 0], [1, 1, 0, 0], [1, 1, 1, 1]]
-    assert Solution().matrixScore(grid) == 53
-
-
-def test_1_():
     grid = [[0, 0, 1, 1], [1, 0, 1, 0], [1, 1, 0, 0]]
     assert Solution().matrixScore(grid) == 39
 
@@ -34,6 +29,11 @@ def test_1_():
 def test_2():
     grid = [[0]]
     assert Solution().matrixScore(grid) == 1
+
+
+def test_3():
+    grid = [[0, 0, 1, 1], [1, 0, 1, 0], [1, 1, 0, 0], [1, 1, 1, 1]]
+    assert Solution().matrixScore(grid) == 51
 
 
 if __name__ == '__main__':
