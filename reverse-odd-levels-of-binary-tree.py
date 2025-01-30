@@ -20,9 +20,7 @@ class Solution:
             level = newLevel
             if isOddLevel:
                 for i in range((len(level) + 1) // 2):
-                    leftValue = level[i].val
-                    level[i].val = level[-1 - i].val
-                    level[-1 - i].val = leftValue
+                    level[i].val, level[-1 - i].val = level[-1 - i].val, level[i].val
         return root
 
 
