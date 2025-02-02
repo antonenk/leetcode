@@ -3,12 +3,11 @@
 # https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/description/
 # beats 96% runtime / 24% mem
 
-from typing import Optional
 from leetcode import ListNode, getLinkedListFromArray
 
 
 class Solution:
-    def pairSum(self, head: Optional[ListNode]) -> int:
+    def pairSum(self, head: ListNode) -> int:
         values = [head.val]
         while head.next is not None:
             head = head.next
