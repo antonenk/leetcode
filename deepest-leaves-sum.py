@@ -3,17 +3,11 @@
 # https://leetcode.com/problems/deepest-leaves-sum/description/
 # beats 67% runtime / 23% mem
 
-from typing import Optional
+from typing import Tuple
+from leetcode import TreeNode
 
 
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
-
-
-def walkTree(node: TreeNode, level=0) -> int:
+def walkTree(node: TreeNode, level=0) -> Tuple[int, int]:
     deepest_level = level
     sum_on_deepest_level = node.val
     if node.right is not None:
@@ -29,7 +23,7 @@ def walkTree(node: TreeNode, level=0) -> int:
 
 
 class Solution:
-    def deepestLeavesSum(self, root: Optional[TreeNode]) -> int:
+    def deepestLeavesSum(self, root: TreeNode) -> int:
         deepest_level, sum_on_deepest_level = walkTree(root, 0)
         return sum_on_deepest_level
 
