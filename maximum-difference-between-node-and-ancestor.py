@@ -3,7 +3,7 @@
 # https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/description/
 # beats 63% runtime / 11% mem
 
-from typing import Optional, Tuple
+from typing import Tuple
 from leetcode import TreeNode
 
 
@@ -30,7 +30,7 @@ def walkTree(node: TreeNode) -> Tuple[int, int, int]:
 
 
 class Solution:
-    def maxAncestorDiff(self, root: Optional[TreeNode]) -> int:
+    def maxAncestorDiff(self, root: TreeNode) -> int:
         min_val, max_val, max_diff = walkTree(root)
         return max_diff
 
