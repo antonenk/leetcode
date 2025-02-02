@@ -3,10 +3,11 @@
 # https://leetcode.com/problems//description/
 # beats 48% runtime / 16% mem
 
+from typing import Tuple
 from leetcode import TreeNode
 
 
-def walkTree(node: TreeNode) -> int:
+def walkTree(node: TreeNode) -> Tuple[int, int, int]:
     if node.left is not None:
         left_total_sum, left_total_count, left_suitable_count = walkTree(node.left)
     else:
