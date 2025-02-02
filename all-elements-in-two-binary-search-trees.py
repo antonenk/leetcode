@@ -3,7 +3,6 @@
 # https://leetcode.com/problems/all-elements-in-two-binary-search-trees/description/
 # beats 93% runtime / 79% mem
 
-from typing import Optional
 from leetcode import TreeNode
 
 
@@ -21,7 +20,7 @@ def getValuesFromTree(root: TreeNode):
 
 
 class Solution:
-    def getAllElements(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> list[int]:
+    def getAllElements(self, root1: TreeNode, root2: TreeNode) -> list[int]:
         gen1 = getValuesFromTree(root1)
         gen2 = getValuesFromTree(root2)
 
