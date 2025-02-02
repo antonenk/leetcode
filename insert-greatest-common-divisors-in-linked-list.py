@@ -2,13 +2,12 @@
 
 # https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/description/
 
-from typing import Optional
 from math import gcd
 from leetcode import ListNode, getArrayFromLinkedList, getLinkedListFromArray
 
 
 class Solution:
-    def insertGreatestCommonDivisors(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    def insertGreatestCommonDivisors(self, head: ListNode) -> ListNode:
         curListNode = head
         while curListNode.next is not None:
             nextListNode = curListNode.next
