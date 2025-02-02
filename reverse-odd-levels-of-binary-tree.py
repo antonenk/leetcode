@@ -3,12 +3,11 @@
 # https://leetcode.com/problems/reverse-odd-levels-of-binary-tree/description/
 # beats 86% runtime / 80% mem
 
-from typing import Optional
 from leetcode import TreeNode
 
 
 class Solution:
-    def reverseOddLevels(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+    def reverseOddLevels(self, root: TreeNode) -> TreeNode:
         level = [root]
         isOddLevel = False
         while level[0].left is not None:
