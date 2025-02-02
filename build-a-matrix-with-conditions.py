@@ -4,13 +4,15 @@
 # score: hard
 # beats 11% runtime / 77% mem
 
+from typing import Dict, Set, Optional
 
-def orderByConditions(k: int, conditions: list[list[int]]) -> list[int]:
-    numsBefore = {num: set() for num in range(1, k + 1)}
+
+def orderByConditions(k: int, conditions: list[list[int]]) -> Optional[Dict[int, int]]:
+    numsBefore: Dict[int, Set[int]] = {num: set() for num in range(1, k + 1)}
     for condition in conditions:
         numsBefore[condition[1]].add(condition[0])
 
-    numsUsed = set()
+    numsUsed: Set[int] = set()
     orders = {}
 
     for order in range(k):
