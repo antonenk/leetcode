@@ -1,26 +1,25 @@
 #!/usr/bin/python3
 
 # https://leetcode.com/problems/delete-leaves-with-a-given-value/description/
-# beats 100% runtime / 29% mem
+# beats 100% runtime / 47% mem
 
 from typing import Optional
 from leetcode import TreeNode
 
 
-def walkTree(node: TreeNode, target: int) -> bool:
-    if node.left is not None and walkTree(node.left, target):
-        node.left = None
-    if node.right is not None and walkTree(node.right, target):
-        node.right = None
-    return node.left is None and node.right is None and node.val == target
+def walkTree(node: TreeNode, target: int) -> Optional[TreeNode]:
+    if node.left is not None:
+        node.left = walkTree(node.left, target)
+    if node.right is not None:
+        node.right = walkTree(node.right, target)
+    if node.left is None and node.right is None and node.val == target:
+        return None
+    return node
 
 
 class Solution:
     def removeLeafNodes(self, root: TreeNode, target: int) -> Optional[TreeNode]:
-        if walkTree(root, target):
-            return None
-        else:
-            return root
+        return walkTree(root, target)
 
 
 def test_1():
